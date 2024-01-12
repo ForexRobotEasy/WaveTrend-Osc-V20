@@ -1,0 +1,46 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                         WaveTrend Osc V20.mq5    |
+//|                   Copyright 2022, forexroboteasy.com             |
+//|                                              Forex Robot Easy Team|
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//|                     Customizable Market Analysis                   |
+//+------------------------------------------------------------------+
+input bool EnableLag = true; // Enable or disable lag indicator
+input bool EnableDivergences = true; // Enable or disable divergences indicator
+input ENUM_APPLIED_PRICE AppliedPrice = PRICE_CLOSE; // Applied price for calculations
+
+//+------------------------------------------------------------------+
+//|                          Overbought/Oversold Levels                |
+//+------------------------------------------------------------------+
+double OverboughtLevel = 300; // Level to identify overbought zone
+double OversoldLevel = -300; // Level to identify oversold zone
+
+//+------------------------------------------------------------------+
+//|                          Trading Functions                         |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+   // Add your trading logic here
+}
+
+//+------------------------------------------------------------------+
+//|                            Indicator Functions                    |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime& time[],
+                const double& open[],
+                const double& high[],
+                const double& low[],
+                const double& close[],
+                const long& tick_volume[],
+                const long& volume[],
+                const int& spread[])
+{
+   // Add your indicator calculations here
+   
+   return rates_total;
+}
